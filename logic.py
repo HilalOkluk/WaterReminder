@@ -32,6 +32,5 @@ class WaterTracker:
     def add_cup(self):
         self.cups_drunk += 1
 
-
     def reset_cups(self):
         self.cups_drunk = 0
