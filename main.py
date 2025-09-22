@@ -8,5 +8,3 @@ if __name__ == '__main__':
     w = WaterReminder()
     w.show()
     sys.exit(app.exec_())
-
-print("Hilal")
