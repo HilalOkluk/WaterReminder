@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from PyQt5.QtCore import QObject, QTimer, pyqtSignal
 
 # Su Hatırlatıcı Zamanlayıcı Mantığı Sınıfı
@@ -31,6 +33,16 @@ class WaterTracker:
 
     def add_cup(self):
         self.cups_drunk += 1
+        self.cupCount()
+
 
     def reset_cups(self):
         self.cups_drunk = 0
+
+    def sıfırlama(self):
+            self.status = " Hazır "
+            self.cups_drunk = 0
+            self.timer = 0
+
+    def cupCount(self):
+        return self.cups_drunk
