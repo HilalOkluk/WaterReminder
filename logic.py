@@ -48,7 +48,6 @@ class WaterTracker:
     def __init__(self, daily_goal):
         self.daily_goal = daily_goal
         self.cups_drunk = 0
-
     def add_cup(self):
         self.cups_drunk += 1
         self.cupCount()
