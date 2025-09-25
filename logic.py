@@ -42,6 +42,7 @@ class ReminderLogic(QObject):
         minutes_sure = int(gecen_sure.total_seconds() / 60)
         return minutes_sure
 
+
 # Su Tüketimi ve Hesaplama Mantığı Sınıfı
 class WaterTracker:
     def __init__(self, daily_goal):
